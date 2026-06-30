@@ -1,3 +1,10 @@
+# FlashFinds
+![Autor](https://img.shields.io/badge/Autor-Pietro%20Costa%20Cardoso-blue?style=flat-square&logo=github)
+![Licença](https://img.shields.io/badge/Licença-MIT-yellow.svg?style=flat-square)
+![Status](https://img.shields.io/badge/Status-Original%20Repo-green?style=flat-square)
+
+> **Aviso:** Este é o repositório original. Se você encontrar este código em outro perfil sem os devidos créditos, ele foi plagiado.
+---
 🌐 [Português](#português) | [English](#english)
 
 ## Português
@@ -8,7 +15,7 @@ Uma aplicação de loja online robusta, com arquitetura modular e desenvolvida s
 
 ---
 
-### 🚀 Principais Diferenciais Técnicos
+### Principais Diferenciais Técnicos
 
 * **Arquitetura Modular:** Divisão clara de responsabilidades em múltiplos apps (`produto`, `pedido`, `perfil`), facilitando a manutenção, escrita de testes e evolução do software.
 * **Otimização de Imagens Automatizada:** Integração com a biblioteca *Pillow* no backend para redimensionar automaticamente imagens de produtos para um padrão otimizado de 800px, garantindo performance e economia de armazenamento.
@@ -17,7 +24,7 @@ Uma aplicação de loja online robusta, com arquitetura modular e desenvolvida s
 
 ---
 
-### 🛠️ Tecnologias e Ferramentas
+### Tecnologias e Ferramentas
 
 * **Backend:** Python, Django 6
 * **Processamento de Imagem:** Pillow
@@ -26,7 +33,7 @@ Uma aplicação de loja online robusta, com arquitetura modular e desenvolvida s
 
 ---
 
-### 📦 Estrutura do Projeto e Funcionalidades
+### Estrutura do Projeto e Funcionalidades
 
 **🔹 App Produto**
 * Gerenciamento completo de produtos e suas variações (tamanhos, cores, etc.).
@@ -89,7 +96,7 @@ A robust online store application with modular architecture, built following Dja
 
 ---
 
-### 🚀 Key Technical Highlights
+### Key Technical Highlights
 
 * **Modular Architecture:** Clear separation of responsibilities across multiple apps (`produto`, `pedido`, `perfil`), making maintenance, test writing, and software evolution easier.
 * **Automated Image Optimization:** Backend integration with the Pillow library to automatically resize product images to an optimized 800px standard, ensuring performance and storage savings.
@@ -98,7 +105,7 @@ A robust online store application with modular architecture, built following Dja
 
 ---
 
-### 🛠️ Technologies and Tools
+### Technologies and Tools
 
 * **Backend:** Python, Django 6
 * **Image Processing:** Pillow
@@ -107,7 +114,7 @@ A robust online store application with modular architecture, built following Dja
 
 ---
 
-### 📦 Project Structure and Features
+### Project Structure and Features
 
 **🔹 Produto App (Product)**
 * Full management of products and their variations (sizes, colors, etc.).
