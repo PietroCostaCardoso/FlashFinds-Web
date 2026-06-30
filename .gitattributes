@@ -1,3 +1,8 @@
-# Ocultar bibliotecas de terceiros das estatísticas de linguagem do GitHub
-/static/assets/bootstrap/**/* linguist-vendored
-/static/assets/font-awesome/**/* linguist-vendored
+# Bloqueio global de bibliotecas de terceiros (independente da pasta)
+*bootstrap* linguist-vendored
+*font-awesome* linguist-vendored
+*fontawesome* linguist-vendored
+
+# Garantia para arquivos minificados e assets comuns de terceiros
+*.min.js linguist-vendored
+*.min.css linguist-vendored
