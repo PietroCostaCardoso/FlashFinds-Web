@@ -65,12 +65,15 @@ Uma aplicação de loja online robusta, com arquitetura modular e desenvolvida s
 #### Passo a passo
 #### 1. Clonar o repositório
 $ git clone 
+
 $ cd nome-do-repositorio
 
 #### 2. Criar e ativar o ambiente virtual
 $ python -m venv venv
-$ source venv/bin/activate        # Linux/macOS
-$ venv\Scripts\activate           # Windows
+
+$ source venv/bin/activate  (Linux/macOS)
+
+$ venv\Scripts\activate    (Windows)
 
 #### 3. Instalar as dependências
 $ pip install -r requirements.txt
@@ -136,6 +139,32 @@ A robust online store application with modular architecture, built following Dja
 * Strict configuration of static and media file directories (`MEDIA_ROOT`, `STATIC_ROOT`, `STATICFILES_DIRS`).
 
 ---
+### 📸 Screenshots
+<div align="center">
+  <table>
+    <tr>
+      <td><img src="https://github.com/user-attachments/assets/211ad754-1b5c-4a0f-bfcc-9f4084e368a4" width="70%" /></td>
+      <td><img src="https://github.com/user-attachments/assets/9d3d6dfc-d71a-4eb8-b181-7f34a6beadbc" width="100%" /></td>
+    </tr>
+     <tr>
+      <td><img src="https://github.com/user-attachments/assets/ef69db1f-831e-41cf-a919-79074d71c10d" width="100%" /></td>
+      <td><img src="https://github.com/user-attachments/assets/3764a7d9-65d1-4cf8-b8a1-e2b00313dbe9" width="100%" /></td>
+    </tr>
+    <tr>
+      <td><img src="https://github.com/user-attachments/assets/91346f43-20c4-4f8e-8ccb-3bf04e0c6b5c" width="100%" /></td>
+      <td><img src="https://github.com/user-attachments/assets/f8ff5330-b1fb-4ca7-9938-e9a299316c5c" width="100%" /></td>
+    </tr>
+     <tr>
+      <td><img src="https://github.com/user-attachments/assets/43cbcd39-7d8d-484c-89d2-34f50c5eaf0d" width="100%" /></td>
+      <td><img src="https://github.com/user-attachments/assets/0514506c-86dd-4b54-83b3-7f1b2d6d74e8" width="100%" /></td>
+    </tr>
+     <tr>
+      <td><img src="https://github.com/user-attachments/assets/b143e059-9719-4485-9e09-e71527616509" width="70%" /></td>
+      <td><img src="https://github.com/user-attachments/assets/4da77702-1d71-4995-b361-7a77aeed0372" width="100%" /></td>
+    </tr>
+    
+ </table>
+</div>
 
 ### ⚙️ How to Run the Project
 
@@ -151,8 +180,10 @@ $ cd repository-name
 
 #### 2. Create and activate the virtual environment
 $ python -m venv venv
-$ source venv/bin/activate        # Linux/macOS
-$ venv\Scripts\activate           # Windows
+
+$ source venv/bin/activate   (Linux/macOS)
+
+$ venv\Scripts\activate       (Windows)
 
 #### 3. Install dependencies
 $ pip install -r requirements.txt
