@@ -1,0 +1,20 @@
+{% extends 'perfil/criar.html' %}
+
+{% block titulo %}Meus Dados | {% endblock %}
+
+{% block head_title %}Gerenciar Perfil{% endblock %}
+
+{% block titulocadastro %}
+<div class="alert alert-info border-0 shadow-sm mb-4">
+    <i class="fa fa-info-circle mr-2"></i>
+    Olá, <strong>{{ user.first_name }}</strong>! Mantenha seus dados de entrega sempre atualizados para evitar problemas nos seus pedidos.
+</div>
+{% endblock %}
+
+{% block seguranca_titulo %}Alterar Senha{% endblock %}
+
+{% block senha_label %}Nova Senha (deixe em branco para não alterar){% endblock %}
+
+{% block senha2_label %}Repetir Nova Senha{% endblock %}
+
+{% block botao_texto %}Atualizar Meus Dados{% endblock %}

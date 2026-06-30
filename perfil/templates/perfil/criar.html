@@ -1,0 +1,214 @@
+{% extends 'base.html' %}
+
+{% block titulo %}Criar Conta | {% endblock %}
+
+{% block conteudo %}
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+            <div class="d-flex align-items-center mb-4">
+                <i class="fa fa-user-circle fa-2x text-primary mr-3"></i>
+                <h1 class="m-0">{% block head_title %}Criar Minha Conta{% endblock %}</h1>
+            </div>
+
+            {% block titulocadastro %}
+            <div class="alert alert-light border shadow-sm mb-4">
+                <h5 class="text-dark font-weight-bold">Bem-vindo(a)!</h5>
+                <p class="mb-0 text-muted">Preencha os campos abaixo para criar seu perfil e finalizar suas compras com mais agilidade.</p>
+            </div>
+            {% endblock %}
+
+            <form method="POST">
+                {% csrf_token %}
+                
+                <!-- Card: Dados Pessoais -->
+                <div class="card border-0 shadow-sm mb-4">
+                    <div class="card-header bg-white py-3">
+                        <h5 class="mb-0 text-primary font-weight-bold">Dados Pessoais</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="small font-weight-bold">Nome</label>
+                                    {{ userform.first_name }}
+                                    <div class="text-danger small">{{ userform.first_name.errors }}</div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="small font-weight-bold">Sobrenome</label>
+                                    {{ userform.last_name }}
+                                    <div class="text-danger small">{{ userform.last_name.errors }}</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="small font-weight-bold">E-mail</label>
+                                    {{ userform.email }}
+                                    <div class="text-danger small">{{ userform.email.errors }}</div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="small font-weight-bold">Nome de Usuário</label>
+                                    {{ userform.username }}
+                                    <div class="text-danger small">{{ userform.username.errors }}</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label class="small font-weight-bold">CPF</label>
+                                    {{ perfilform.cpf }}
+                                    <div class="text-danger small">{{ perfilform.cpf.errors }}</div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label class="small font-weight-bold">Nascimento</label>
+                                    {{ perfilform.data_nascimento }}
+                                    <div class="text-danger small">{{ perfilform.data_nascimento.errors }}</div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label class="small font-weight-bold">Idade</label>
+                                    {{ perfilform.idade }}
+                                    <div class="text-danger small">{{ perfilform.idade.errors }}</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card: Endereço -->
+                <div class="card border-0 shadow-sm mb-4">
+                    <div class="card-header bg-white py-3">
+                        <h5 class="mb-0 text-primary font-weight-bold">Endereço de Entrega</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label class="small font-weight-bold">CEP</label>
+                                    {{ perfilform.cep }}
+                                    <div class="text-danger small">{{ perfilform.cep.errors }}</div>
+                                </div>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="form-group">
+                                    <label class="small font-weight-bold">Logradouro</label>
+                                    {{ perfilform.endereco }}
+                                    <div class="text-danger small">{{ perfilform.endereco.errors }}</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label class="small font-weight-bold">Número</label>
+                                    {{ perfilform.numero }}
+                                    <div class="text-danger small">{{ perfilform.numero.errors }}</div>
+                                </div>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="form-group">
+                                    <label class="small font-weight-bold">Complemento</label>
+                                    {{ perfilform.complemento }}
+                                    <div class="text-danger small">{{ perfilform.complemento.errors }}</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div class="form-group">
+                                    <label class="small font-weight-bold">Bairro</label>
+                                    {{ perfilform.bairro }}
+                                    <div class="text-danger small">{{ perfilform.bairro.errors }}</div>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="form-group">
+                                    <label class="small font-weight-bold">Cidade</label>
+                                    {{ perfilform.cidade }}
+                                    <div class="text-danger small">{{ perfilform.cidade.errors }}</div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <label class="small font-weight-bold">UF</label>
+                                    {{ perfilform.estado }}
+                                    <div class="text-danger small">{{ perfilform.estado.errors }}</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card: Segurança -->
+                <div class="card border-0 shadow-sm mb-4">
+                    <div class="card-header bg-white py-3">
+                        <h5 class="mb-0 text-primary font-weight-bold">{% block seguranca_titulo %}Senha de Acesso{% endblock %}</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="small font-weight-bold">{% block senha_label %}Senha{% endblock %}</label>
+                                    {{ userform.password }}
+                                    <div class="text-danger small">{{ userform.password.errors }}</div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="small font-weight-bold">{% block senha2_label %}Confirmar Senha{% endblock %}</label>
+                                    {{ userform.password2 }}
+                                    <div class="text-danger small">{{ userform.password2.errors }}</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-right">
+                    <button type="submit" class="btn btn-primary btn-lg px-5 shadow mb-5" id="btn-submit-perfil">
+                        <i class="fa fa-check-circle mr-2"></i>
+                        {% block botao_texto %}Finalizar Cadastro{% endblock %}
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <style>
+        .card { border-radius: 12px; }
+        .form-group input, .form-group select {
+            display: block;
+            width: 100%;
+            height: 45px;
+            padding: 10px 15px;
+            font-size: 1rem;
+            border-radius: 8px;
+            border: 1px solid #ced4da;
+            transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        }
+        .form-group input:focus {
+            border-color: #3483fa;
+            outline: 0;
+            box-shadow: 0 0 0 0.2rem rgba(52,131,250,.1);
+        }
+        .btn-primary {
+            background-color: #3483fa;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+        }
+        .btn-primary:hover { background-color: #2968c8; }
+        .text-primary { color: #3483fa !important; }
+    </style>
+</div>
+{% endblock %}

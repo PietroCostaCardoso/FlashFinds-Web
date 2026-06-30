@@ -1,0 +1,3 @@
+# Ocultar bibliotecas de terceiros das estatísticas de linguagem do GitHub
+static/assets/bootstrap/**/* linguist-vendored
+static/assets/font-awesome/**/* linguist-vendored

@@ -1,0 +1,39 @@
+### Local / Project Specific ###
+testes_nada_a_ver.py
+DUMB_DB_DATA.json
+TODOs.txt
+TESTES.py
+local_settings.py
+
+### Python ###
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+### Django ###
+*.log
+db.sqlite3
+db.sqlite3-journal
+media/
+
+### Environments ###
+.env
+.venv/
+env/
+venv/
+ENV/
+
+### Testing & Distribution ###
+.coverage
+.pytest_cache/
+htmlcov/
+build/
+dist/
+*.egg-info/
+
+### IDEs & Tools ###
+.idea/
+.vscode/
+*.iml

@@ -1,0 +1,57 @@
+{% load static %}
+
+<footer class="container-fluid bg-dark text-light mt-5">
+    <div class="container py-5">
+        <div class="row">
+            <!-- Sobre a Loja -->
+            <div class="col-md-4 mb-4">
+                <h5 class="text-uppercase font-weight-bold">FlashFinds</h5>
+                <p>As melhores ofertas você encontra aqui. Qualidade e rapidez na entrega para todo o Brasil.</p>
+                <div class="mt-3">
+                    <a href="#" class="text-light mr-3"><i class="fab fa-facebook-f fa-lg"></i></a>
+                    <a href="#" class="text-light mr-3"><i class="fab fa-instagram fa-lg"></i></a>
+                    <a href="#" class="text-light mr-3"><i class="fab fa-twitter fa-lg"></i></a>
+                </div>
+            </div>
+
+            <!-- Links Rápidos -->
+            <div class="col-md-4 mb-4">
+                <h5 class="text-uppercase font-weight-bold">Navegação</h5>
+                <ul class="list-unstyled">
+                    <li><a href="{% url 'produto:lista' %}" class="text-light">Home</a></li>
+                    <li><a href="{% url 'produto:carrinho' %}" class="text-light">Meu Carrinho</a></li>
+                    <li><a href="{% url 'perfil:criar' %}" class="text-light">Minha Conta</a></li>
+                    <li><a href="{% url 'pedido:lista' %}" class="text-light">Meus Pedidos</a></li>
+                </ul>
+            </div>
+
+            <!-- Atendimento -->
+            <div class="col-md-4 mb-4">
+                <h5 class="text-uppercase font-weight-bold">Atendimento</h5>
+                <ul class="list-unstyled">
+                    <li><i class="fas fa-envelope mr-2"></i> suporte@flashfinds.com</li>
+                    <li><i class="fas fa-phone mr-2"></i> (11) 9999-9999</li>
+                    <li><i class="fas fa-map-marker-alt mr-2"></i> São Paulo, SP</li>
+                </ul>
+            </div>
+        </div>
+
+        <hr class="bg-light">
+
+        <!-- Direitos Autorais e Tecnologia -->
+        <div class="row pt-2">
+            <div class="col-md-8">
+                <p class="small mb-0">© {% now "Y" %} FlashFinds - Todos os direitos reservados.</p>
+            </div>
+            <div class="col-md-4 text-md-right">
+                <span class="small">Desenvolvido com <strong>Django</strong></span>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="{% static 'assets/bootstrap/js/jquery-3.2.1.slim.min.js'%}"></script>
+<script src="{% static 'assets/bootstrap/js/popper.min.js'%}"></script>
+<script src="{% static 'assets/bootstrap/js/bootstrap.min.js'%}"></script>
+<script defer src="{% static 'assets/font-awesome/js/all.js'%}"></script>
+<script src="{% static 'assets/custom/js/scripts.js'%}"></script>
